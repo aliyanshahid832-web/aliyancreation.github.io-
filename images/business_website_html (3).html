@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliyan Creations - Premium Women's Fabrics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Arial',sans-serif;line-height:1.6;color:#333;background:linear-gradient(135deg,#ffeef8 0%,#fff5f8 100%);} 
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+
+        header{background:linear-gradient(135deg,#ff69b4,#ffb6c1);color:white;padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;} 
+        nav{display:flex;justify-content:space-between;align-items:center;}
+        .logo{font-size:1.8rem;font-weight:bold;text-decoration:none;color:white;}
+
+        .nav-links{display:flex;list-style:none;gap:2rem;}
+        .nav-links a{color:white;text-decoration:none;}
+
+        .menu-toggle{display:none;font-size:1.5rem;cursor:pointer;}
+
+        .hero{background:url('web_banner.jpg') no-repeat center/cover;height:100vh;display:flex;align-items:center;text-align:center;color:white;margin-top:80px;}
+
+        .section{padding:70px 0;}
+        .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#ff69b4;}
+
+        .fabric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+
+        .fabric-card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(255,105,180,0.2);transition:0.3s;}
+        .fabric-card:hover{transform:translateY(-8px);} 
+
+        .fabric-image{height:200px;background-size:cover;background-position:center;}
+
+        .fabric-content{padding:1.5rem;text-align:center;}
+        .price-tag{background:#ff69b4;color:white;padding:8px 15px;border-radius:20px;margin:10px 0;display:inline-block;}
+
+        .order-btn{display:inline-block;margin-top:10px;background:#25D366;color:white;padding:10px 15px;border-radius:20px;text-decoration:none;}
+
+        footer{background:#ff69b4;color:white;text-align:center;padding:2rem 0;}
+
+        .whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+
+        @media(max-width:768px){
+            .nav-links{display:none;flex-direction:column;background:#ff69b4;position:absolute;top:70px;width:100%;left:0;text-align:center;}
+            .nav-links.active{display:flex;}
+            .menu-toggle{display:block;color:white;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="container">
+        <a href="#" class="logo">Aliyan Creations</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#fabrics">Fabrics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Aliyan Creations</h1>
+        <p>Premium Women's Collection</p>
+    </div>
+</section>
+
+<section id="fabrics" class="section">
+    <div class="container">
+        <h2>Our Collection</h2>
+        <div class="fabric-grid">
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f');"></div>
+                <div class="fabric-content">
+                    <h3>Stitched Wear</h3>
+                    <div class="price-tag">PKR 3500+</div>
+                    <a class="order-btn" href="https://wa.me/923001234567?text=I want Stitched Wear" target="_blank">Order</a>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf');"></div>
+                <div class="fabric-content">
+                    <h3>Unstitched Wear</h3>
+                    <div class="price-tag">PKR 1500+</div>
+                    <a class="order-btn" href="https://wa.me/923001234567?text=I want Unstitched Wear" target="_blank">Order</a>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1518837695005-2083093ee35b');"></div>
+                <div class="fabric-content">
+                    <h3>Kids Wear</h3>
+                    <div class="price-tag">New Collection</div>
+                    <a class="order-btn" href="https://wa.me/923001234567?text=I want Kids Wear" target="_blank">Order</a>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348');"></div>
+                <div class="fabric-content">
+                    <h3>Fragrance</h3>
+                    <div class="price-tag">Perfumes</div>
+                    <a class="order-btn" href="https://wa.me/923001234567?text=I want Fragrance" target="_blank">Order</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 style="margin-top:50px;">Fabric Types</h2>
+        <div class="fabric-grid">
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1583743089695-4b7cfc7b6b3c');"></div>
+                <div class="fabric-content">
+                    <h3>Lawn</h3>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab');"></div>
+                <div class="fabric-content">
+                    <h3>Cotton</h3>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519');"></div>
+                <div class="fabric-content">
+                    <h3>Winter Wear</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 style="margin-top:50px;">Design Work</h2>
+        <div class="fabric-grid">
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb');"></div>
+                <div class="fabric-content">
+                    <h3>Printed</h3>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d');"></div>
+                <div class="fabric-content">
+                    <h3>Fancy Daman Work</h3>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1520975916090-3105956dac38');"></div>
+                <div class="fabric-content">
+                    <h3>Neck Work</h3>
+                </div>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-image" style="background-image:url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');"></div>
+                <div class="fabric-content">
+                    <h3>Overall Work</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>WhatsApp: +92 300 1234567</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
